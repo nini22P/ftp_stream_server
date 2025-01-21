@@ -4,7 +4,7 @@ This server streams files from an FTP server over HTTP.
 
 ## Endpoint
 
-`GET /stream/{filename}`
+`GET /{filename}`
 
 *   **`filename`:** The file to stream.
 *   **Query Parameters:**
@@ -17,17 +17,17 @@ This server streams files from an FTP server over HTTP.
 
 ### With User/Password
 ```
-http://<server_ip>:<port>/stream/file.txt?addr=ftp.example.com&port=2121&user=test&pass=pass
+http://<server_ip>:<port>/file.txt?addr=ftp.example.com&port=2121&user=test&pass=pass
 ```
 
 ### Anonymous Access
 
 ```
-http://<server_ip>:<port>/stream/file.txt?addr=ftp.example.com&port=2121
+http://<server_ip>:<port>/file.txt?addr=ftp.example.com&port=2121
 ```
 
 ### Default Port and Anonymous
 
 ```
-http://<server_ip>:<port>/stream/file.txt?addr=ftp.example.com
+http://<server_ip>:<port>/file.txt?addr=ftp.example.com
 ```
